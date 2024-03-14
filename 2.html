@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+</head>
+<body>
+    <p>
+        import java.util.Scanner;<br>
+public class Arithmetic_operations {<br>
+public static void main(String args[]) {<br>
+Scanner s = new Scanner(System.in);<br>
+while(true) {<br>
+System.out.println("");<br>
+System.out.println("Enter the two numbers to perform operations ");<br>
+System.out.print("Enter the first number : ");<br>
+int x = s.nextInt();<br>
+System.out.print("Enter the second number : ");<br>
+int y = s.nextInt();<br>
+System.out.println("Choose the operation you want to perform ");<br>
+System.out.println("Choose 1 for ADDITION");<br>
+System.out.println("Choose 2 for SUBTRACTION");<br>
+System.out.println("Choose 3 for MULTIPLICATION");<br>
+System.out.println("Choose 4 for DIVISION");<br>
+System.out.println("Choose 5 for MODULUS");<br>
+System.out.println("Choose 6 for EXIT");<br>
+int n = s.nextInt();<br>
+switch(n) {<br>
+case 1:<br>
+int add;<br>
+add = x + y;<br>
+System.out.println("Addition of Two Numbers : "+add);<br>
+break;<br>
+case 2:<br>
+int sub;<br>
+sub = x - y;<br>
+System.out.println("Subtraction of Two Numbers : "+sub); break;<br>
+case 3:<br>
+int mul;<br>
+mul = x * y;<br>
+System.out.println("Multiplication of Two Numbers : "+mul);<br>
+break;<br>
+case 4:<br>
+float div;<br>
+div = (float) x / y;<br>
+System.out.print("Division of Two Numbers : "+div);<br>
+break;<br>
+case 5: int mod;<br>
+mod = x % y;<br>
+System.out.println("Modulus of Two Numbers : "+mod);<br>
+break;<br>
+default: System.exit(0);<br>
+break;<br>
+}<br>
+}<br>
+}<br>
+}<br>
+    </p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+</head>
+<body>
+    <p>
+        class Box<br>
+{<br>
+double w, h, d;<br>
+double volume()<br>
+{<br>
+return w*h*d;<br>
+}<br>
+Box() //ordinary constructor<br>
+{<br>
+w=h=d=5;<br>
+}<br>
+Box(double wd, double ht, double dp) //parameterized constructor<br>
+{<br>
+w=wd;<br>
+h=ht;<br>
+d=dp;<br>
+}<br>
+}<br>
+class BoxDemo<br>
+{<br>
+public static void main(String args[])<br>
+{<br>
+Box b1=new Box();<br>
+Box b2=new Box();<br>
+Box b3=new Box(2,4,3);<br>
+System.out.println("The volumeof b1 is " + b1.volume());<br>
+System.out.println("The volumeof b2 is " + b2.volume());<br>
+System.out.println("The volumeof b3 is " + b3.volume());<br>
+}<br>
+}<br>
+    </p>
+</body>
+</html>

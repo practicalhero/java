@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+</head>
+<body>
+    <p>
+        import java.util.Scanner;<br>
+public class MOperation{<br>
+public static void main(String[] args)<br>
+{<br>
+Scanner sc = new Scanner(System.in);<br>
+System.out.println("Enter The Number Of Rows");<br>
+int row = sc.nextInt();<br>
+System.out.println("Enter The Number Of Columns");<br>
+int cols = sc.nextInt();<br>
+//defining 2D array to hold matrix data<br>
+int[][] matrix1 = new int[row][cols];<br>
+int[][] matrix2 = new int[row][cols];<br>
+int[][] sum = new int[row][cols];<br>
+int[][] sub = new int[row][cols];<br>
+int[][] mul = new int[row][cols];<br>
+System.out.println("Enter Matrix1 Data");<br>
+for (int i = 0; i < row; i++)<br>
+{<br>
+for (int j = 0; j < cols; j++)<br>
+{<br>
+matrix1[i][j] = sc.nextInt();<br>
+}<br>
+}<br>
+System.out.println("Enter Matrix2 Data");<br>
+for (int i = 0; i < row; i++)<br>
+{<br>
+for (int j = 0; j < cols; j++)<br>
+{<br>
+matrix2[i][j] = sc.nextInt();<br>
+}<br>
+}<br>
+System.out.println("Your Matrix1 is : ");<br>
+for (int i = 0; i < row; i++)<br>
+{<br>
+for (int j = 0; j < cols; j++)<br>
+{<br>
+System.out.print(matrix1[i][j]+"\t");<br>
+}<br>
+System.out.println();<br>
+}<br>
+System.out.println("Your Matrix2 is : ");<br>
+for (int i = 0; i < row; i++)<br>
+{<br>
+for (int j = 0; j < cols; j++)<br>
+{<br>
+System.out.print(matrix2[i][j]+"\t");<br>
+}<br>
+System.out.println();<br>
+}<br>
+System.out.println("Sum is : ");<br>
+for (int i = 0; i < row; i++)<br>
+{<br>
+for (int j = 0; j < cols; j++)<br>
+{<br>
+sum[i][j]=matrix1[i][j]+matrix2[i][j];<br>
+System.out.print(sum[i][j]+"\t");<br>
+}<br>
+System.out.println();<br>
+}<br>
+System.out.println("Subtraction is : ");<br>
+for (int i = 0; i < row; i++)<br>
+{<br>
+for (int j = 0; j < cols; j++)<br>
+{<br>
+sub[i][j]=matrix1[i][j]-matrix2[i][j];<br>
+System.out.print(sub[i][j]+"\t");<br>
+}<br>
+System.out.println();<br>
+}<br>
+System.out.println("Multiplication is : ");<br>
+for (int i = 0; i < row; i++)<br>
+{<br>
+for (int j = 0; j < cols; j++)<br>
+{<br>
+mul[i][j]=0;<br>
+for (int k = 0; k < cols; k++){<br>
+mul[i][j]=mul[i][j]+matrix1[i][k]*matrix2[k][j];<br>
+}<br>
+System.out.print(mul[i][j]+"\t");<br>
+}<br>
+System.out.println();<br>
+}<br>
+}<br>
+}<br>
+    </p>
+</body>
+</html>

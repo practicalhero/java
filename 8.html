@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8</title>
+</head>
+<body>
+    <p>
+        import java.util.Scanner;<br>
+public class ExceptionDemo {<br>
+public static void main(String[] args) {<br>
+Scanner sc = new Scanner(System.in);<br>
+System.out.println("Enter two integers: ");<br>
+int a = sc.nextInt();<br>
+int b = sc.nextInt();<br>
+try {<br>
+if (b == 0) {<br>
+throw new ArithmeticException("Division by zero");<br>
+}<br>
+int result = a / b;<br>
+System.out.println("Result of integer division: " + result);<br>
+} catch (ArithmeticException e) {<br>
+System.out.println(e.getMessage());<br>
+}<br>
+try {<br>
+int[] arr = new int[5];<br>
+arr[10] = 50; //invalid index generates exception<br>
+} catch (ArrayIndexOutOfBoundsException e) {<br>
+System.out.println(e.getMessage());<br>
+}<br>
+}<br>
+}<br>
+    </p>
+</body>
+</html>

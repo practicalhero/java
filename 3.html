@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+</head>
+<body>
+    <p>
+        import java.util.Scanner;<br>
+public class Sum_Odd_Even {<br>
+public static void main(String[] args) {<br>
+int n, sumE = 0, sumO = 0;<br>
+Scanner s = new Scanner(System.in);<br>
+System.out.print("Enter the number of elements in array:");<br>
+n = s.nextInt();<br>
+int[] a = new int[n];<br>
+System.out.println("Enter the elements of the array:");<br>
+for(int i = 0; i < n; i++)<br>
+{<br>
+a[i] = s.nextInt();<br>
+}<br>
+for(int i = 0; i < n; i++)<br>
+{<br>
+if(a[i] % 2 == 0)<br>
+{<br>
+sumE = sumE + a[i];<br>
+}<br>
+else<br>
+{<br>
+sumO = sumO + a[i];<br>
+}<br>
+}<br>
+System.out.println("Sum of Even Numbers:"+sumE);<br>
+System.out.println("Sum of Odd Numbers:"+sumO);<br>
+}<br>
+}<br>
+    </p>
+</body>
+</html>

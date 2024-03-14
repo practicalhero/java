@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6</title>
+</head>
+<body>
+    <p>SIMPLE INHERITENCE<br><br>
+        class Shape{<br>
+            int a=10,b=20;<br>
+            }<br>
+            class Rectangle extends Shape{<br>
+            public void rectArea(){<br>
+            System.out.println(“Rectangle Area:”+(a*b));<br>
+            }<br>
+            }<br>
+            public class Main<br>
+            {<br>
+            public static void main(String[] args) {<br>
+            Rectangle obj=new Rectangle();<br>
+            obj.rectArea();<br>
+            }<br>
+            }<br><hr>
+    </p>
+    <p>
+        MULTILEVEL<br><br>
+        class Numbers{<br>
+            int a=10,b=20;<br>
+            }<br>
+            class Add2 extends Numbers{<br>
+            int c=30;<br>
+            public void sum2(){<br>
+            System.out.println(“Sum of 2 nos.:”+(a+b));<br>
+            }<br>
+            }<br>
+            class Add3 extends Add2{<br>
+            public void sum3(){<br>
+            System.out.println(“Sum of 3 nos.:”+(a+b+c));<br>
+            }<br>
+            }<br>
+            public class Main<br>
+            {<br>
+            public static void main(String[] args) {<br>
+            Add3 obj=new Add3();<br>
+            obj.sum2();<br>
+            obj.sum3();<br>
+            }<br>
+            }<br><hr>
+    </p>
+    <p>
+        Hierarchical<br><br>
+        class Shape{<br>
+            int a=10,b=20;<br>
+            }<br>
+            class Rectangle extends Shape{<br>
+            public void rectArea(){<br>
+            System.out.println("Rectangle Area:"+(a*b));<br>
+            }<br>
+            }<br>
+            class Triangle extends Shape{<br>
+            public void triArea(){<br>
+            System.out.println("Triangle Area:"+(0.5*a*b));<br>
+            }<br>
+            }<br>
+            public class Main<br>
+            {<br>
+            public static void main(String[] args) {<br>
+            Rectangle obj=new Rectangle();<br>
+            obj.rectArea();<br>
+            Triangle obj1=new Triangle();<br>
+            obj1.triArea();<br>
+            }<br>
+            }<br><hr>
+    </p>
+</body>
+</html>

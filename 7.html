@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7</title>
+</head>
+<body>
+    <p>
+        abstract class shape<br>
+{<br>
+abstract double area();<br>
+}<br>
+class rectangle extends shape<br>
+{<br>
+double l=12.5,b=2.5;<br>
+double area()<br>
+{<br>
+return l*b;<br>
+}<br>
+}<br>
+class triangle extends shape<br>
+{<br>
+double b=4.2,h=6.5;<br>
+double area()<br>
+{<br>
+return 0.5*b*h;<br>
+}<br>
+}<br>
+class square extends shape<br>
+{<br>
+double s=6.5;<br>
+double area()<br>
+{<br>
+return 4*s;<br>
+}<br>
+}<br>
+class Main<br>
+{<br>
+public static void main(String[] args)<br>
+{<br>
+rectangle r1=new rectangle();<br>
+triangle t1=new triangle();<br>
+square s1=new square();<br>
+System.out.println("The area of rectangle is: "+r1.area());<br>
+System.out.println("The area of triangle is: "+t1.area());<br>
+System.out.println("The area of square is: "+s1.area());<br>
+}<br>
+}<br>
+    </p>
+</body>
+</html>

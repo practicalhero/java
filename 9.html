@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9</title>
+</head>
+<body>
+    <p>
+        interface D<br>
+{<br>
+void display();<br>
+}<br>
+interface E extends D<br>
+{<br>
+void show();<br>
+}<br>
+class A<br>
+{<br>
+void callme()<br>
+{<br>
+System.out.println("This is in callme method");<br>
+}<br>
+}<br>
+class B extends A implements E<br>
+{<br>
+public void display()<br>
+{<br>
+System.out.println("This is in display method");<br>
+}<br>
+public void show()<br>
+{<br>
+System.out.println("This is in show method");<br>
+}<br>
+}<br>
+class C extends B<br>
+{<br>
+void call()<br>
+{<br>
+System.out.println("This is in call method");<br>
+}<br>
+}<br>
+class interfacedemo<br>
+{<br>
+public static void main(String args[])<br>
+{<br>
+C c1=new C();<br>
+c1.display();<br>
+c1.show();<br>
+c1.callme();<br>
+c1.call();<br>
+}<br>
+}<br>
+    </p>
+</body>
+</html>
